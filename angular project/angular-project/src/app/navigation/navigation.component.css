@@ -1,0 +1,45 @@
+.sidenav-container {
+  background-image: url("../../kosmos.jpg");
+  height: 100%;
+
+}
+
+.sidenav {
+  background-color: rgba(0, 0, 0, 0.6);
+
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+
+  color: white;
+  background-color: rgba(0, 0, 0, 1);
+
+}
+
+.mat-toolbar.mat-primary {
+
+  background-color: rgba(0, 0, 0, 0);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.mat-list-item{
+
+  border-radius:25px;
+	border:2px solid #1787e4;
+  margin-right: 2px;
+  margin-left: -2px;
+  
+  margin-bottom: 7px;
+  color: white;
+  background:linear-gradient(to bottom, #040535 5%, #042263 100%);
+  text-align: center;
+}
+
+
+.mat-list-item:hover {
+	background:linear-gradient(to bottom, #1845a7 5%, #1215a3 100%);
+
+}

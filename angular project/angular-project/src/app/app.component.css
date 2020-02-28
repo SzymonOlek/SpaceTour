@@ -1,0 +1,59 @@
+.login{
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15%;
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    top: 15%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -200px;
+    text-align: center;
+    color: white;
+
+}
+button{
+    background-color: rgb(7, 40, 100);
+    border-radius: 45%;
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+input {
+
+    font-size: 35px;
+    margin: 5px;
+    color: black;
+    outline: none;
+    text-align: center;
+    width: 350px;
+    height: 35px;
+}
+input:focus::placeholder {
+    color: red;
+}
+input:focus{
+    color: black;
+    background-color: gray;
+}
+
+input[type=radio]{
+    margin-top: 0px;
+    margin-left: 0px;
+    background-color: rgb(7, 40, 100);;
+    font-size: 15px;
+    color: black;
+    outline: none;
+    text-align: center;
+    width: 50px;
+    height: 15px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+textarea{
+    width: 300px;
+}

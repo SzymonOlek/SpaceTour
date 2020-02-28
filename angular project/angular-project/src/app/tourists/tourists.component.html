@@ -1,0 +1,70 @@
+<div class="mat-elevation-z8">
+  <table mat-table class="full-width-table" matSort aria-label="Elements">
+    <!-- Id Column -->
+    <ng-container matColumnDef="tourist_id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header class= "column">tourist_id</th>
+      <td mat-cell *matCellDef="let row" class= "column">{{row.tourist_id}}</td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name" >
+      <th mat-header-cell *matHeaderCellDef mat-sort-header class= "column" >Name</th>
+      <td mat-cell *matCellDef="let row" class= "column">{{row.name}}</td>
+    </ng-container>
+    
+    <!-- Lastname Column -->
+    <ng-container matColumnDef="lastname" >
+      <th mat-header-cell *matHeaderCellDef mat-sort-header class= "column" >Lastname</th>
+      <td mat-cell *matCellDef="let row" class= "column">{{row.lastname}}</td>
+    </ng-container>
+
+    <!-- Sex Column -->
+    <ng-container matColumnDef="sex" >
+      <th mat-header-cell *matHeaderCellDef mat-sort-header class= "column" >Sex</th>
+      <td mat-cell *matCellDef="let row" class= "column">{{row.sex}}</td>
+    </ng-container>
+
+    <!-- Country Column -->
+    <ng-container matColumnDef="country" >
+      <th mat-header-cell *matHeaderCellDef mat-sort-header class= "column" >Country</th>
+      <td mat-cell *matCellDef="let row" class= "column">{{row.country}}</td>
+    </ng-container>
+
+    <!-- Birth Column -->
+    <ng-container matColumnDef="birth" >
+      <th mat-header-cell *matHeaderCellDef mat-sort-header class= "column" >Birth</th>
+      <td mat-cell *matCellDef="let row" class= "column">{{row.birth}}</td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="flights">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header class= "column">Flights</th>
+      <td mat-cell *matCellDef="let row" class= "column"> <button (click)=change($event)> Flights</button> </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="delButton">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header class= "column">Delete</th>
+      <td mat-cell *matCellDef="let row" class= "column"> <button (click)='del($event)'> Delete</button> </td>
+    </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="addFlight">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header class= "column">Add flight</th>
+        <td mat-cell *matCellDef="let row" class= "column"> <button (click)=addflight($event)> Add</button></td>
+      </ng-container>
+    
+
+    
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns" ></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;" ></tr>
+  </table>
+
+
+  <mat-paginator #paginator class="bottomPanel"
+      [pageIndex]="0"
+      [pageSize]="5"
+      [pageSizeOptions]="[5, 10, 15, 25]">
+  </mat-paginator>
+</div>

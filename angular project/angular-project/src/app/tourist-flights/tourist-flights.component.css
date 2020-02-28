@@ -1,0 +1,29 @@
+.full-width-table {
+
+  color: white;
+  border: 2px solid rgb(0, 0, 0);
+  background: linear-gradient(to bottom,rgba(4,5,53,0.3) 5%,rgba(4,34,99,0.3) 100%);
+  width: 800px;
+}
+
+.mat-elevation-z8{
+  width: 800px;
+
+  margin-right: 25%;
+  margin-left: 25%;
+  margin-top: 10%;
+  color: white;
+}
+
+.column{
+  padding-left: 20px;
+  border: 1px solid rgba(0, 0, 0,1);
+  color: white;
+}
+
+.bottomPanel{
+
+  width: 800px;
+  color: white;
+  background: linear-gradient(to bottom, #5d5ea7 5%, #042263 100%);
+}

@@ -1,0 +1,23 @@
+
+  <div class="formula">
+    <input placeholder="Name" [(ngModel)]='newtourist.name'>
+    <input placeholder="Lastname"[(ngModel)]='newtourist.lastname'>
+   
+    <div>
+    <label style="display:block">
+    <input type='radio' value='male' name="sex" [(ngModel)]='newtourist.sex'> male   
+
+    <input type='radio' value='female' name="sex" [(ngModel)]='newtourist.sex'>femele
+    </label>
+    </div>
+
+    <input placeholder="Country"[(ngModel)]='newtourist.country'>
+    <p>Date of Birth:</p>
+    <input type="date" [(ngModel)]='newtourist.birth' min="1950-01-01" max="2020-12-31"> 
+    <p> Notes:</p>
+    <textarea [(ngModel)]='newtourist.notes'>notes</textarea>
+    
+    <button (click)='add()'>Add</button>
+    <button (click)='reset()'>Reset</button>
+    
+    </div>
